@@ -1,0 +1,739 @@
+.home-container {
+    width: 100%;
+    font-family: Proxima Nova;
+    background: rgba(250, 249, 249, 1);
+}
+.container {
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header {
+    height: 80px;
+    width: 100%;
+}
+
+header .header{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background: rgba(250, 249, 249, 1);
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(233, 233, 233, 1);
+}
+
+#logoDarkMin {
+    display: none;
+}
+
+
+header .header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 158px;
+}
+
+header .header ul li {
+    margin-left: 50px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110%;
+    cursor: pointer;
+}
+
+header .header #seasons {
+    right: 270px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header .header #seasons #ball {
+    margin-left: 10px;
+}
+header .header #seasons #arrow {
+    margin-left: 10px;
+}
+
+#menu-burger {
+    display: none;
+}
+
+header .header #personal-area {
+    position: absolute;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    right: 142px;
+    border: 2px solid rgba(90, 96, 231, 1);
+    border-radius: 50%;
+}
+
+header .header #personal-area img {
+    padding: 1px;
+}
+
+header .header #bag {
+    position: absolute;
+    right: 49px;
+}
+
+header .header #bag .count-number {
+    position: absolute;
+    background: rgba(134, 227, 206, 1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    bottom: 3px;
+    right: -5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: Proxima Nova;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    margin-bottom: 247px;
+}
+
+#side-menu {
+    position: relative;
+    height: 800px;
+    width: 295px;
+    top: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+#side-menu #player-area {
+    position: relative;
+    display: flex;
+    height: 184px;
+    width: 295px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%),
+    linear-gradient(0deg, #2C2C2C, #2C2C2C);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#side-menu #player-area .player-area-container {
+    display: flex;
+}
+
+#side-menu #player-area .player-area-container #logo-big {
+    right: 142px;
+    border: 2px solid rgba(90, 96, 231, 1);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+#side-menu #player-area .player-area-container #logo-big img{
+    padding: 3px;
+}
+
+#side-menu #player-area .player-area-container #contact-info {
+    margin-left: 10px;
+
+}
+
+#side-menu #player-area .player-area-container #contact-info #ratio {
+    font-family: Proxima Nova;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+#side-menu #player-area .player-area-container #contact-info #player-name {
+    font-family: Proxima Nova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+#side-menu #player-area #edit {
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    position: absolute;
+    bottom: 20px;
+    color: rgba(172, 175, 243, 1);
+    text-decoration: underline;
+}
+
+#side-menu #player-area #edit #edit-icon {
+    margin-right: 5px;
+
+}
+
+#side-menu #account-menu {
+    margin-top: 50px;
+    margin-right: 65px;
+}
+
+#side-menu #account-menu ul {
+    list-style: none;
+}
+
+#side-menu #account-menu ul li {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#side-menu #account-menu ul li svg{
+    margin-right: 10px;
+}
+
+#side-menu #account-menu ul li:hover{
+    background: #EFEFFD;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgba(90, 96, 231, 1);
+}
+
+#side-menu #account-menu ul li #arrow {
+    position: relative;
+    margin-left: auto;
+}
+
+#side-menu #account-menu ul #exit {
+    margin-top: 50px;
+}
+
+.statistics-content {
+    position: relative;
+    width: 1015px;
+    height: 184px;
+    left: 50px;
+    top: 20px;
+}
+
+#statistics {
+    position: relative;
+    width: 1015px;
+    height: 184px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#statistics ul{
+    list-style: none;
+}
+#statistics .achieve-block {
+    width: 275px;
+}
+
+#statistics .achieve-block .regular {
+    height: 49px;
+}
+
+#statistics .achieve-block .regular .active-achie ul{
+    float: left;
+    display: flex;
+    padding: 5px 0;
+    margin: 0;
+}
+#statistics .achieve-block .regular .active-achie ul li{
+    margin-right: 15px;
+}
+
+#statistics .achieve-block .regular .inactive-achie ul {
+    float: right;
+    display: flex;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#statistics .achieve-block .regular .inactive-achie ul li {
+    margin-left: 10px;
+}
+
+#statistics .achieve-block .regular .inactive-achie {
+}
+
+#statistics .achieve-block .received-achie ul{
+    display: flex;
+    padding: 15px 0;
+    margin: 0;
+}
+#statistics .achieve-block .received-achie ul li{
+    margin-right: 5px;
+}
+
+#statistics .toggle-games {
+    margin-left: 50px;
+    width: 440px;
+}
+
+hr {
+    clear: both;
+    margin: 0;
+}
+
+#statistics .toggle-games .toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid #5A60E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#statistics .toggle-games .toggle .card {
+    width: 210px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: rgba(172, 175, 243, 1);
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#statistics .toggle-games .toggle .activeSeason {
+    background: #5A60E7;
+    font-weight: 600;
+    color: white;
+}
+
+#statistics .toggle-games .toggle .all-seasons {
+    background: #5A60E7;
+    color: white;
+    font-weight: 600;
+}
+
+#statistics .toggle-games .toggle .data-seasons {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#statistics .toggle-games .toggle-cards ul{
+    display: flex;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#statistics .toggle-games .toggle-cards ul li{
+    width: 95px;
+    height: 75px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    background: linear-gradient(238.37deg, rgba(90, 96, 231, 0.35) 6.34%, rgba(30, 30, 40, 0) 103.77%), #2C2C2C;
+    border-radius: 5px;
+    border: 1px solid;
+    border-image-source: linear-gradient(143.66deg, #6171FF -9.12%, rgba(90, 96, 231, 0) 40.43%);
+    border-image-source: linear-gradient(120.87deg, rgba(97, 113, 255, 0) 70.49%, #6171FF 90.53%);
+    font-family: Proxima Nova;
+    font-style: normal;
+    letter-spacing: 0em;
+}
+
+.toggle-name {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+}
+
+.toggle-count {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: right;
+    color: rgba(255, 121, 91, 1);
+}
+
+#statistics .toggle-games .toggle-cards ul li:last-child {
+    margin-right: 0;
+}
+
+#statistics .share-link {
+    margin-left: 44px;
+    color: rgba(172, 175, 243, 1);
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+#statistics .share-link .share-icons ul{
+    display: flex;
+    margin: 7.5px 0;
+    padding: 0;
+}
+
+#statistics .share-link .share-icons ul li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+#statistics .share-link .pattern {
+    position: absolute;
+    top: 20px;
+}
+
+#btn-format {
+    height: 40px;
+    width: 170px;
+    left: 385px;
+    top: 304px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: white;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#btn-format #arrow {
+    margin-left: auto;
+
+}
+
+#table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+    background: rgba(250, 249, 249, 1);
+}
+
+footer {
+    background: rgba(34, 34, 34, 1);
+}
+
+.footer-text {
+    display: flex;
+    padding-top: 50px;
+}
+
+.contacts .stores {
+    display: flex;
+}
+
+.contacts .logo-light {
+    margin-bottom: 30px;
+}
+
+.contacts .stores div {
+    margin-right: 10px;
+}
+
+.contacts .contacts-link {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(172, 175, 243, 1);
+    margin-bottom: 30px;
+}
+
+.footer-info {
+    display: flex;
+    margin-left: 176px;
+    margin-right: 136px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-info div h2 {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(172, 175, 243, 1);
+    margin-bottom: 20px;
+}
+
+.footer-info div ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+.footer-info div ul li {
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.copyright {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+@media (max-width: 1400px) {
+    #side-menu {
+        display: none;
+    }
+
+    .statistics-content {
+        margin-bottom: 300px;
+        left: 0;
+    }
+
+
+    .footer-info {
+        margin-left: 86px;
+        margin-right: 46px;
+    }
+
+    header .header ul {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    #logoDarkBig,
+    #personal-area,
+    header .header #seasons,
+    header .header ul {
+        display: none;
+    }
+
+    #logoDarkMin,
+    #menu-burger{
+        display: block;
+    }
+
+    #menu-burger {
+        position: absolute;
+        margin-left: auto;
+        right: 10px;
+    }
+    header .header #bag {
+        right: 60px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .SwitcherSize {
+        padding: 0;
+    }
+
+    #side-menu {
+        display: block;
+        width: 100%;
+        background: none;
+        height: 235px;
+        top: 0;
+    }
+
+    #side-menu #player-area {
+        width: 100%;
+        height: 155px;
+        border-radius: 0;
+    }
+
+    #side-menu #account-menu {
+        margin: 20px 0;
+    }
+
+    #side-menu #account-menu ul {
+        padding: 0;
+        height: 40px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    #side-menu #account-menu {
+        overflow: hidden;
+    }
+
+    #side-menu #account-menu ul li {
+        height: 40px;
+        width: 180px;
+        padding: 0;
+        border-radius: 5px;
+        background: white;
+        display: inline-block;
+        flex: 0 0 180px;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #side-menu #account-menu ul li:hover {
+        padding: 0;
+    }
+
+    .MenuStatistic {
+        display: none;
+    }
+    .menuOpenItem {
+        position: absolute;
+        z-index: 10;
+    }
+    .menuOpenItem ul {
+        list-style: none;
+        margin-top: -10px;
+    }
+    .menuOpenItem ul li {
+        height: 40px;
+        width: 180px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menuOpenItem ul li:last-child{
+        border-radius: 0 0 5px 5px ;
+    }
+
+    .menuOpenItem ul li:first-child {
+        border-radius: 5px 5px 0 0;
+    }
+    .statistics-content {
+        position: relative;
+        width: 100%;
+    }
+    #statistics {
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+        flex-direction: column;
+        height: 280px;
+        align-items: center;
+    }
+
+    .pattern {
+        display: none;
+    }
+    #statistics .toggle-games {
+        margin-left: 0;
+        width: 300px;
+    }
+    #statistics .toggle-games .toggle-cards ul{
+        margin-top: 10px;
+    }
+    #statistics .toggle-games .toggle-cards ul li{
+        width: 67px;
+        height: 60px;
+        font-style: normal;
+        letter-spacing: 0em;
+    }
+    .toggle-name {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 13px;
+    }
+
+    .toggle-count {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .share-link {
+        display: none;
+    }
+    #btn-format {
+        margin-left: 10px;
+    }
+    #table-ratio {
+        overflow: hidden;
+        padding: 10px;
+    }
+    footer {
+        margin-top: 500px;
+    }
+    .footer-text {
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-text .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-info {
+        display: none;
+    }
+    footer hr {
+        display: none;
+    }
+    .copyright {
+        flex-direction: column;
+    }
+}
