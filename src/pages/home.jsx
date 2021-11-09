@@ -22,33 +22,37 @@ const Home = () => {
         let AccountMenu = document.getElementById('account-menu');
         AccountMenu = AccountMenu.querySelector('ul');
         AccountMenu.style.position = 'relative';
+        //alert(document.documentElement.clientWidth);
+        if (document.documentElement.clientWidth <= 720) {
+            let coords = getCoords(AccountMenu);
+            let shiftX = e.pageX - coords.left;
 
-        let coords = getCoords(AccountMenu);
-        let shiftX = e.pageX - coords.left;
-        function moveAt(e) {
-            if (AccountMenu.style.left <= 0 && +AccountMenu.style.left.slice(0,-2) + 800 - document.documentElement.clientWidth > 0) {
-                AccountMenu.style.left = e.pageX - shiftX + 'px';
-            } else if (e.pageX - shiftX < 0 && +AccountMenu.style.left.slice(0,-2) + 800 - document.documentElement.clientWidth > 0) {
-                AccountMenu.style.left = e.pageX - shiftX + 'px';
-            } else  {
-                AccountMenu.style.left = e.pageX - shiftX + 'px';
+            function moveAt(e) {
+                if (AccountMenu.style.left <= 0 && +AccountMenu.style.left.slice(0, -2) + 800 - document.documentElement.clientWidth > 0) {
+                    AccountMenu.style.left = e.pageX - shiftX + 'px';
+                } else if (e.pageX - shiftX < 0 && +AccountMenu.style.left.slice(0, -2) + 800 - document.documentElement.clientWidth > 0) {
+                    AccountMenu.style.left = e.pageX - shiftX + 'px';
+                } else {
+                    AccountMenu.style.left = e.pageX - shiftX + 'px';
+                }
             }
-        }
 
-        document.onmousemove = function(e) {
-            moveAt(e);
-        }
+            document.onmousemove = function (e) {
+                moveAt(e);
+            }
 
-        AccountMenu.onmouseup = function() {
-            document.onmousemove = null;
-            AccountMenu.onmouseup = null;
-        }
-        function getCoords(elem) {   // кроме IE8-
-            let box = elem.getBoundingClientRect();
-            return {
-                top: box.top + window.pageYOffset,
-                left: box.left + window.pageXOffset
-            };
+            AccountMenu.onmouseup = function () {
+                document.onmousemove = null;
+                AccountMenu.onmouseup = null;
+            }
+
+            function getCoords(elem) {   // кроме IE8-
+                let box = elem.getBoundingClientRect();
+                return {
+                    top: box.top + window.pageYOffset,
+                    left: box.left + window.pageXOffset
+                };
+            }
         }
     }
 
@@ -136,11 +140,13 @@ const Home = () => {
                                         </svg>
                                     }
                                 </li>
-                                {isOpenStatistic ? <ul className="MenuStatistic">
-                                    <li>Футбол</li>
-                                    <li>Баскетбол</li>
-                                    <li>Волейбол</li>
-                                </ul> : ''}
+                                <div className="MenuStatistic">
+                                    {isOpenStatistic ? <ul>
+                                        <li>Футбол</li>
+                                        <li>Баскетбол</li>
+                                        <li>Волейбол</li>
+                                    </ul> : ''}
+                                </div>
                                 <li onClick={() => setOpenGames(!isOpenGames)}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.75 8.75C4.75 7.64543 5.64543 6.75 6.75 6.75H17.25C18.3546 6.75 19.25 7.64543 19.25 8.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H6.75C5.64543 19.25 4.75 18.3546 4.75 17.25V8.75Z" stroke="#ACAFF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -150,11 +156,13 @@ const Home = () => {
                                     </svg>
                                     Ближайшие игры
                                 </li>
-                                {isOpenGames ? <ul className="MenuStatistic">
-                                    <li>Футбол 01/13</li>
-                                    <li>Баскетбол 01/13</li>
-                                    <li>Волейбол 01/13</li>
-                                </ul> : ''}
+                                <div className="MenuStatistic">
+                                    {isOpenGames ? <ul>
+                                        <li>Футбол 01/13</li>
+                                        <li>Баскетбол 01/13</li>
+                                        <li>Волейбол 01/13</li>
+                                    </ul> : ''}
+                                </div>
                                 <li>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9 6.75H7.75C6.64543 6.75 5.75 7.64543 5.75 8.75V17.25C5.75 18.3546 6.64543 19.25 7.75 19.25H16.25C17.3546 19.25 18.25 18.3546 18.25 17.25V8.75C18.25 7.64543 17.3546 6.75 16.25 6.75H15" stroke="#ACAFF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

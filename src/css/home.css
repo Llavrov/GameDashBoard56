@@ -260,6 +260,9 @@ header .header #bag .count-number {
     display: flex;
 }
 
+.menuOpenItem {
+    display: none;
+}
 #statistics ul{
     list-style: none;
 }
@@ -641,6 +644,7 @@ footer {
         display: none;
     }
     .menuOpenItem {
+        display: block;
         position: absolute;
         z-index: 10;
     }
