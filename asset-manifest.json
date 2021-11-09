@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GameDashBoard56/static/css/main.5d4ba8f5.chunk.css",
+    "main.js": "/GameDashBoard56/static/js/main.694d1dcd.chunk.js",
+    "main.js.map": "/GameDashBoard56/static/js/main.694d1dcd.chunk.js.map",
+    "runtime-main.js": "/GameDashBoard56/static/js/runtime-main.7f83f280.js",
+    "runtime-main.js.map": "/GameDashBoard56/static/js/runtime-main.7f83f280.js.map",
+    "static/js/2.58fd7c91.chunk.js": "/GameDashBoard56/static/js/2.58fd7c91.chunk.js",
+    "static/js/2.58fd7c91.chunk.js.map": "/GameDashBoard56/static/js/2.58fd7c91.chunk.js.map",
+    "static/js/3.c694e21c.chunk.js": "/GameDashBoard56/static/js/3.c694e21c.chunk.js",
+    "static/js/3.c694e21c.chunk.js.map": "/GameDashBoard56/static/js/3.c694e21c.chunk.js.map",
+    "index.html": "/GameDashBoard56/index.html",
+    "static/css/main.5d4ba8f5.chunk.css.map": "/GameDashBoard56/static/css/main.5d4ba8f5.chunk.css.map",
+    "static/js/2.58fd7c91.chunk.js.LICENSE.txt": "/GameDashBoard56/static/js/2.58fd7c91.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f83f280.js",
+    "static/js/2.58fd7c91.chunk.js",
+    "static/css/main.5d4ba8f5.chunk.css",
+    "static/js/main.694d1dcd.chunk.js"
+  ]
+}
